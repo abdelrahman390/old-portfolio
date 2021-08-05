@@ -1114,9 +1114,6 @@ footer span a:hover{
         width: 321%;
         margin: -48px;
     }
-    .home .max-width{
-        width: 90%;
-    }
     .about .about-content .right{
         margin-left: 315px;
     }
@@ -1124,10 +1121,10 @@ footer span a:hover{
         margin-left: -241px;
     }
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 27px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 25px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -1152,7 +1149,9 @@ footer span a:hover{
         line-height: 38px;
     }
     .home .max-width{
-
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 35px;
     }
     .card-service{
         margin-right: 31px;
@@ -1162,4 +1161,17 @@ footer span a:hover{
         height: 40px;
         margin-left: -5px;
     }
+    .home .home-content .text-1{
+        font-size: 20px;
+    }
+    .section__subtitle--intro{
+        width: 330px;
+    }
+    .navbar .logo img{
+        height: 40px;
+        margin-left: -60px;
+        margin-top: -10px;
+    }
+
+
 }
