@@ -996,17 +996,23 @@ footer span a:hover{
  
 
 
+
+
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
     html{
-        width: 133%;
+        width: 136%;
     }
     .navbar{
         width: 72%;
     }
+    .max-width{
+        max-width: 100%;
+    }
+
 
 }
 
@@ -1104,6 +1110,19 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    html{
+        width: 321%;
+        margin: -48px;
+    }
+    .home .max-width{
+        width: 90%;
+    }
+    .about .about-content .right{
+        margin-left: 315px;
+    }
+    .about .about-content .left{
+        margin-left: -241px;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -1131,5 +1150,11 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    .home .max-width{
+        margin-left: 110px;
+    }
+    .card-service{
+        margin-right: 31px;
     }
 }
