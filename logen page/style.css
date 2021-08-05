@@ -1,0 +1,109 @@
+header{
+    height: 70px;
+    color: blue;
+    background: #00000017;
+}
+.header-img{
+    margin-left: 25px;
+    height: 66px;
+}
+.sm{
+    display: flex;
+    float: right;
+    text-decoration: none;
+    background: transparent;
+    margin-top: 18px;
+}
+.sm li{
+    list-style: none;
+    margin-right: 15px
+}
+.sm a{
+    font-size: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+body{
+ margin: 0;
+ padding: 0; 
+ font-family: sans-serif;
+ background: url(fff.jpg) no-repeat;
+ background-size: cover;
+}
+header{
+     width: auto;
+    overflow: auto;
+}
+form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+img[alt="user"] {
+    position: absolute;
+    top: -60px;
+    left: 99px;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+}
+input[type="text"],[type="password"]{
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-bottom: 2px solid #0094ff;
+    background: none;
+    padding: 5px;
+    color: #fff;
+}
+input[type="text"]{
+    top: 140px;
+    left: 50px;
+}
+[type="password"]{
+    top: 210px;
+    left: 50px;
+}
+::placeholder{
+    color: #fff;
+}
+a[value="login"]{
+    position:absolute;
+    top: 305px;
+    left: 110px;
+    width: 130px;
+    height: 35px;
+    background: #0077ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-top: 4px;
+    text-align: center;
+}
+a[value="login"]:hover{
+    background: #fff;
+    color: #0077ff;
+}
+p{
+    position: absolute;
+    top: 360px;
+    left: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+p:hover{
+    color: #77c9ff;
+}
