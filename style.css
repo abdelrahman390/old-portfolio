@@ -746,6 +746,7 @@ section .title2::after{
   .card-btn:active span {
     margin-left: 1.5rem;
   }
+
   
   @media only screen and (max-width: 60em) {
     body {
