@@ -29,18 +29,23 @@
                 <li><a href="#my-work" class="menu-btn">My Work</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
+            
   
             <div class="lang-menu">
                 <div class="selected-lang">
                     English
                 </div>
                 <ul>
-
                     <li>
                         <a href="arabic-page/index-arabic.html" class="ar">Arabic</a>
                     </li>
                 </ul>
                 
+            </div>
+
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -88,29 +93,30 @@
     </section>
 
     <!-- services section start -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My services</h2>
-              <div class="card-service">
+            <div class="serv-content">
                 <div class="card1">
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
                         <div class="text">Web Design</div>
-                        <p>make modern design for your web site .</p>
+                        <p>make modern design for your web site.</p>
                     </div>
                 </div>
                 <div class="card2">
                     <div class="box">
-                        <i class="fa fa-code"></i>
-                        <div class="text">Web Development</div>
-                        <p>change your web site`s old design to new simplest, most beautiful and modern design.</p>
+                        <i class="fas fa-code"></i>
+                        <div class="text">web Development</div>
+                        <p>change your web site old design to new simplest, most beautiful and modern design.</p>
                     </div>
                 </div>
-              </div>
+
+               </div>
             </div>
         </div>
-        <div id="skills"></div>
     </section>
+
     <!-- skills section start -->
     <section class="skills">
         <div class="max-width">
@@ -123,12 +129,12 @@
  
                         <div class="card1">
                            <img src="images/1584942.png">
-                           <h2 style="color: #1200a9; font-size: 25px; margin-top: 45px; ">fast delivary</h2>
+                           <h2>fast delivary</h2>
                         </div>                            
 
                         <div class="card2">
                           <img src="images/customer.png">
-                          <h2 style="color: #1200a9; font-size: 25px; margin-top: 45px; ">fast Customer Service</h2>
+                          <h2>fast Customer Service</h2>
                         </div> 
                     </div>                         
 
@@ -166,16 +172,18 @@
         <div class="text5">
             <h1>Accredited certification</h1>
         </div>
+        <div class="max-width">
            <div class="image-container">
                <img class="img5" src="images/Abdelrahman_Walid_Elmarsafawy_programming_sites_certificate_page-0001.jpg">
            </div>
+        </div>
            <div  id="my-work"></div>
       </section>
 <!-- My Work -->
     <section class="my-work">
-        <div class="container">
+        <div class="max-width">
             <h1 class="title-text">My Work Examble</h1>
-        <div class="grid">
+        <div class="my-work-container">
             <div class="grid-item">
               <div class="card">
                 <img class="card-img" src="images/Screenshot (176).jpg" alt="Rome" />
@@ -204,92 +212,69 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
-    </section>
+    </div>
+</section>
 <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title2">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Abdelrahman Walid</div>
-                            </div>
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Prakash Shahi</div>
                         </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">egypt,cairo</div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Surkhet, Nepal</div>
                         </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">abdelrahmanbo390@gmail.com</div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">abc@gmail.com</div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-        </div>
-
-
             <div class="column right">
-                <div class="text" style="color: white; padding-bottom: 10px;">Message me</div>
-
-                <form action="php.php" method="POST">
+                <div class="text">Message me</div>
+                <form action="#">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" placeholder="Name" required>
                         </div>
                         <div class="field email">
-                            <input type="email" name="emailaddrese" placeholder="Email" required>
+                            <input type="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" name="subject" placeholder="Subject" required>
+                        <input type="text" placeholder="Subject" required>
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
                     </div>
                     <div class="button-area">
                         <button type="submit">Send message</button>
                     </div>
                 </form>
-
-                    <h1 class="or">OR</h1>
-
-
-
-                   <div>
-                    <ul class="ul1"> 
-                        <a href="http://m.me/abdelrahman.walid390" target="_blank">
-                        <li><i class="fab fa-facebook-f" style="padding-left: 19px; color: #3f3ffd;"></i></li>
-                        </a>
-                         <a href="https://wa.link/rlnzzb" target="_blank">
-                        <li><i class="fab fa-whatsapp"  style="padding-left: 16px; color: #00ff4e;"></i></li>
-                         </a>
-                     </ul>
-                   </div> 
-
             </div>
-
-
-
-    </section>
+        </div>
+    </div>
+</section>
 
     <!-- footer section start -->
     <footer>
-        <span>Created By Abdelrahman Walid <span class="far fa-copyright"></span> 202 All rights reserved.</span>
+        <span>Created By Abdelrahman Walid <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
     </footer>
 
     <script src="script.js"></script>
