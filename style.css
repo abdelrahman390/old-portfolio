@@ -193,7 +193,7 @@ section .title2::after{
     width: 100px;
     text-align: right;
     font-weight: bold;
-    margin-top: -15px;
+    margin-top: 25px;
     position: relative;
 }
 .lang-menu .selected-lang {
@@ -201,8 +201,8 @@ section .title2::after{
     justify-content: space-between;
     line-height: 2;
     cursor: pointer;
-    background-color: #ffffff;
-    padding: 0px 5px;
+    background-color: white;
+    padding: 5px;
     border-radius: 5px;
 }
 .lang-menu .selected-lang:before {
@@ -222,11 +222,11 @@ section .title2::after{
     background-color: #fff;
     border: 1px solid #f8f8f8;
     position: absolute;
-    top: 32px;
-    right: -18px;
+    top: 30px;
+    right: 0px;
     width: 125px;
     border-radius: 5px;
-    box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 }
 
 
@@ -259,19 +259,25 @@ section .title2::after{
     background-repeat: no-repeat;
 }
 
-
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
 
 .en:before {
     background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
 }
 
 .ar:before {
     background-image: url(https://www.countryflags.io/ae/flat/32.png);
 }
+
+
 .lang-menu:hover ul {
     display: block;
 }
-
 
 
 
@@ -545,7 +551,11 @@ section .title2::after{
     margin-right: 50px;
     border: 1px #00000038 solid;
 }
-
+#card-container2 .card2 h2 {
+    color: #1200a9;
+    font-size: 25px;
+    margin-top: 45px;
+}
 #card-container2 .card1 img{
     height: 80px;
     padding: 5px;
@@ -560,7 +570,9 @@ section .title2::after{
     box-shadow: 0 10px 15px rgb(0 0 0 / 38%);
     border: 1px #00000038 solid;
 }
-
+#card-container2 .card2 h2{
+    
+}
 #card-container2 .card2 img{
     height: 75px;
     padding: 5px;
@@ -914,7 +926,15 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 20px;
     }
-    .about .about-content .right .text,
+    .about .about-content .left{
+        display: none;
+    }
+    .about .about-content .right{
+        margin-top: 0px;
+    }
+    .about .about-content .right .text{
+        font-size: 13px;
+    }
     .skills .skills-content .left .text{
         font-size: 19px;
     }
@@ -924,9 +944,31 @@ footer span a:hover{
         border: 1px solid #00000029;
         padding: 10px;
         transition: 0.5s;
-        margin-left: -10px;
-        margin-top: 70px;
+        margin-left: 35px;
+        margin-top: 30px;
         font-size: 14px;
+    }
+    #card-container2 .card1 img{
+        height: 65px;
+        padding: 5px;
+        margin-top: 5px;
+        margin-right: 7px;
+    }
+    #card-container2 .card1 h2{
+        color: #1200a9;
+        font-size: 23px;
+        margin-top: 45px;
+    }
+    #card-container2 .card2 h2{
+        color: #1200a9;
+        font-size: 23px;
+        margin-top: 24px;
+    }
+    #card-container2 .card2 img{
+        height: 65px;
+        padding: 5px;
+        margin-top: 5px;
+        margin-right: 6px;
     }
     .contact .right form .fields{
         flex-direction: column;
