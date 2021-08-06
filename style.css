@@ -179,12 +179,12 @@ section .title2::after{
     grid-row: 2;
     text-align: right;
     position: relative;
-    width: 700px;
+    width: 100%;
     height: 50px;
     margin-top: 15px;
     background-color: crimson;
     font-size: 25px;
-    padding: 10px;
+    padding: 10px;.home-content
 }
 
 
@@ -367,7 +367,7 @@ section .title2::after{
     content: "who i am";
 }
 .about .about-content .left{
-    width: 45%;
+
 }
 .about .about-content .left img{
     height: 400px;
@@ -377,7 +377,7 @@ section .title2::after{
 }
 .about .about-content .right{
     width: 55%;
-    margin-top: -350px;
+    margin-top: 50px;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -430,10 +430,7 @@ section .title2::after{
     background: #111;
     content: "what i provide";
 }
-.card-service{
-    display: flex;
-}
-.services .card1{
+.services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -441,62 +438,29 @@ section .title2::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-block;
-        margin-left: 125px;
 }
-.services .card1 .box{
+.services .serv-content .card:hover{
+    background: crimson;
+}
+.services .serv-content .card .box{
     transition: all 0.3s ease;
 }
-
-.services .card1 i{
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .card1 .text{
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
-
-.card1:hover:before{
-    width: 100%;
-    height: 100%;
-    opacity: 1;   
-}
-.card1:hover:after{
-    width: 100%;
-    height: 100%;
-    opacity: 1;   
-}
-
-.services .card2{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-block;
-    margin-left: 140px;
-}
-.services .card2 .box{
-    transition: all 0.3s ease;
-}
-
-.services .card2 i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.services .card2 .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
 /* skills section styling */
 .max-width-skills{
     max-width: 1300px;
@@ -625,44 +589,25 @@ section .title2::after{
 }
 
 /* my work */
-.my-work{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 115vh;
-    padding: 0px;
-}
 .title-text{
     color: #dc143c;
     font-size: 50px;
     text-align: center;
     margin-top: 30px;
 }
-.grid {
+.my-work-container{
     display: flex;
-    width: 95em;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    align-items: start;
-  }
-  
+}
   .grid-item {
     background-color: #fff;
     border-radius: 0.4rem;
-    overflow: hidden;
     box-shadow: 0 3rem 6rem rgb(0 0 0 / 22%);
     cursor: pointer;
-    transition: 0.2s;
-    width: 520px;
-    margin-right: 40px;
+    transition: all 0.3s ease;
     height: 523px;
-    margin-left: 60px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
   
   .grid-item:hover {
@@ -728,7 +673,7 @@ section .title2::after{
   
   @media only screen and (max-width: 60em) {
     body {
-      padding: 3rem;
+      
     }
   
     .grid {
@@ -737,18 +682,11 @@ section .title2::after{
   }
  
 /* contact section styling */
-.contact{
-    background-color: #222222;
-    height: 420px;
-}
 .contact .title::after{
     content: "get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
-    margin-top: -35px;
-    border-right: 3px solid #dc143c;
-    width: 370px;
 }
 .contact .contact-content .text{
     font-size: 20px;
@@ -775,23 +713,9 @@ section .title2::after{
 }
 .contact .contact-content .info .head{
     font-weight: 500;
-    color: white;
 }
 .contact .contact-content .info .sub-title{
-    color: #fff;
-}
-
-.social-text h1{
-    color: white;
-    padding-bottom: 84px;
-    display: inline-block;
-}
-
-
-.right{
-    width: 500px;
-    margin-left: 500px;
-    margin-top: -210px;
+    color: #333;
 }
 .contact .right form .fields{
     display: flex;
@@ -853,108 +777,6 @@ section .title2::after{
   background: none;
 }
 
-.or{
-    display: flex;
-    margin-left: 545px;
-    margin-top: -175px;
-    color: #dc143c;
-    font-size: 40px;
-}
-
-
-.ul1{
-    display: flex;
-    width: 779px;
-    margin-left: 644px;
-    margin-top: -55px;
-  }
-  .ul1 li{
-    position: relative;
-    display: block;
-    color: #666;
-    font-size: 30px;
-    height: 60px;
-    width: 60px;
-    background: #171515;
-    line-height: 60px;
-    border-radius: 50%;
-    margin: 0 15px;
-    cursor: pointer;
-    transition: .5s;
-  }
-  .ul1 li:before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: inherit;
-    width: inherit;
-    border-radius: 50%;
-    transform: scale(.9);
-    z-index: -1;
-    transition: .5s;
-  }
-  .ul1 li:nth-child(1):before{
-    background: #4267B2;
-  }
-  .ul1 li:nth-child(2):before{
-    background: #63ff00;
-  }
-  .ul1 li:nth-child(3):before{
-    background: #E1306C;
-  }
-  .ul1 li:nth-child(4):before{
-    background: #2867B2;
-  }
-  .ul1 li:nth-child(5):before{
-    background: #ff0000;
-  }
-  .ul1 li:hover:before{
-    filter: blur(3px);
-    transform: scale(1.2);
-  }
-  .ul1 li:nth-child(1):hover:before{
-    box-shadow: 0 0 15px #4267B2;
-  }
-  .ul1 li:nth-child(2):hover:before{
-    box-shadow: 0 0 15px #1DA1F2;
-  }
-  .ul1 li:nth-child(3):hover:before{
-    box-shadow: 0 0 15px #E1306C;
-  }
-  u.ul1l li:nth-child(4):hover:before{
-    box-shadow: 0 0 15px #2867B2;
-  }
-  .ul1 li:nth-child(5):hover:before{
-    box-shadow: 0 0 15px #ff0000;
-  }
-  .ul1 li:nth-child(1):hover{
-    color: #456cba;
-    box-shadow: 0 0 15px #4267B2;
-    text-shadow: 0 0 15px #4267B2;
-  }
-  .ul1 li:nth-child(2):hover{
-    color: #26a4f2;
-    box-shadow: 0 0 15px #1DA1F2;
-    text-shadow: 0 0 15px #1DA1F2;
-  }
-  .ul1 li:nth-child(3):hover{
-    color: #e23670;
-    box-shadow: 0 0 15px #E1306C;
-    text-shadow: 0 0 15px #E1306C;
-  }
-  .ul1 li:nth-child(4):hover{
-    color: #2a6cbb;
-    box-shadow: 0 0 15px #2867B2;
-    text-shadow: 0 0 15px #2867B2;
-  }
-  .ul1 li:nth-child(5):hover{
-    color: #ff1a1a;
-    box-shadow: 0 0 15px #ff0000;
-    text-shadow: 0 0 15px #ff0000;
-  }
-
-
 
 /* footer section styling */
 footer{
@@ -972,61 +794,24 @@ footer span a:hover{
 }
 
 
-
-
-
 /* responsive media query start */
 
-
-/* @media (max-width: 1440px) {
-    html{
-        width: 123%;
-        color: red;
-        margin-right: 20px;
-    }
-    .max-width {
-     margin-left: 20px;
- }
- img.img5 {
-     width: 80%;
- }
- 
- 
- }*/
- 
-
-
-
-
 @media (max-width: 1104px) {
+    .home-content{
+        margin-top: 50px;
+    }
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
-    html{
-        width: 136%;
-    }
-    .navbar{
-        width: 72%;
-    }
-    .max-width{
-        max-width: 100%;
-    }
-
-
 }
 
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
-    html{
-        width: 133%;
-    }
-
-
 }
-@media (max-width: 947px) {
+@media (max-width: 947px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -1092,8 +877,13 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+
     .max-width{
         padding: 0 23px;
+    }
+    .home-content{
+        margin-left: 0px;
+        margin-top: 40px;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -1109,26 +899,34 @@ footer span a:hover{
     }
 }
 
-@media only screen and (max-width: 500px) {
-    html{
-        width: 321%;
-        margin: -48px;
+@media (max-width: 500px) {
+
+    .home-content{
+        margin-left: 0px;
+        margin-top: 40px;
     }
-    .about .about-content .right{
-        margin-left: 315px;
-    }
-    .about .about-content .left{
-        margin-left: -241px;
+    .home .home-content .text-1{
+        font-size: 25px;
     }
     .home .home-content .text-2{
-        font-size: 27px;
+        font-size: 40px;
     }
     .home .home-content .text-3{
-        font-size: 25px;
+        font-size: 20px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
+    }
+    #card-container .card1{
+        width: 250px;
+        height: 200px;
+        border: 1px solid #00000029;
+        padding: 10px;
+        transition: 0.5s;
+        margin-left: -10px;
+        margin-top: 70px;
+        font-size: 14px;
     }
     .contact .right form .fields{
         flex-direction: column;
@@ -1148,30 +946,11 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-    .home .max-width{
-        width: 100%;
-        margin-top: 10px;
-        margin-left: 35px;
-    }
-    .card-service{
-        margin-right: 31px;
-    }
+    .img5{
+        width: 85%;
+        height: 300px;
+        margin: 30px;
 
-    .navbar .logo img{
-        height: 40px;
-        margin-left: -5px;
     }
-    .home .home-content .text-1{
-        font-size: 20px;
-    }
-    .section__subtitle--intro{
-        width: 330px;
-    }
-    .navbar .logo img{
-        height: 40px;
-        margin-left: -60px;
-        margin-top: -10px;
-    }
-
-
 }
+
