@@ -1004,6 +1004,11 @@ footer span a:hover{
     .skills .skills-content .left .text{
         font-size: 19px;
     }
+    .my-work {
+        border-bottom: 1px #00000045 solid;
+        padding-bottom: 50px;
+}
+    }
     .my-work .max-width .title-text{
         color: #dc143c;
         font-size: 34px;
