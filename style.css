@@ -427,6 +427,11 @@ section .title2::after{
     color:#fff;
     background: #111;
 }
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .services .title::before,
 .teams .title::before{
     background: #fff;
@@ -450,7 +455,18 @@ section .title2::after{
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
-        margin-left: 125px;
+    margin-right: 120px;
+}
+.services .max-width .serv-content .card2{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-left: 120px;
 }
 .services .card1 .box{
     transition: all 0.3s ease;
@@ -505,17 +521,7 @@ section .title2::after{
     opacity: 1;   
 }
 
-.services .card2{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-block;
-    margin-left: 140px;
-}
+
 .services .card2 .box{
     transition: all 0.3s ease;
 }
@@ -665,6 +671,9 @@ section .title2::after{
 }
 
 /* my work */
+.my-work{
+    border-bottom: 1px #00000063 solid;
+}
 .title-text{
     color: #dc143c;
     font-size: 50px;
@@ -682,10 +691,11 @@ section .title2::after{
     cursor: pointer;
     transition: all 0.3s ease;
     height: 523px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin: 30px 0px;
+    margin-right: 30px;
   }
-  
+
+
   .grid-item:hover {
     transform: translateY(-0.5%);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
@@ -1001,25 +1011,38 @@ footer span a:hover{
     .about .about-content .right .text{
         font-size: 13px;
     }
+    .services .serv-content{
+        display: block;
+    }
+    .services .max-width .serv-content .card1{
+        margin-right: 0px;
+        width: 100%;
+    }
+    .services .max-width .serv-content .card2{
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 50px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 50px;
+    }
     .skills .skills-content .left .text{
         font-size: 19px;
     }
     .my-work {
         border-bottom: 1px #00000045 solid;
         padding-bottom: 50px;
-}
     }
-    .my-work .max-width .title-text{
-        color: #dc143c;
-        font-size: 34px;
-        text-align: center;
-        margin-top: -79px;
-    }
-    .my-work .max-width .my-work-container{
+.my-work .max-width .my-work-container{
         display: block;
-        margin-top: 40px;
     }
-    .my-work .max-width .my-work-container .grid-item{
+        .my-work .max-width .my-work-container .grid-item .card .card-content .card-btn{
+        margin-top: 110px;
+    }
+    .grid-item {
         background-color: #fff;
         border-radius: 0.4rem;
         box-shadow: 0 3rem 6rem rgb(0 0 0 / 22%);
@@ -1028,17 +1051,41 @@ footer span a:hover{
         height: 523px;
         margin: 30px 0px;
     }
-    .my-work .max-width .my-work-container .grid-item .card .card-content .card-btn{
-        margin-top: 110px;
+    .img5{
+        width: 85%;
+        height: 300px;
+        margin: 30px;
+
     }
-    .services .max-width .serv-content .card1{
-        margin: 8%;
-        width: 325px;
+
+
+
+
+
+
+
+
     }
-    .services .card2{
-        margin: 0px 8%;
-        width: 325px;
+
+
+
+
+
+
+
+
+
+
+    .my-work .max-width .title-text{
+        color: #dc143c;
+   
+        text-align: center;
+        margin-top: -79px;
     }
+  
+
+
+
     #card-container .card1{
         width: 250px;
         height: 200px;
@@ -1089,11 +1136,6 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-    .img5{
-        width: 85%;
-        height: 300px;
-        margin: 30px;
+ 
 
-    }
-}
 
