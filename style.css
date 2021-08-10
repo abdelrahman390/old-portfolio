@@ -37,7 +37,6 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-    direction: rtl;
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -178,7 +177,7 @@ section .title2::after{
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
-    text-align: left;
+    text-align: right;
     position: relative;
     width: 100%;
     height: 50px;
@@ -211,7 +210,7 @@ section .title2::after{
     display: inline-block;
     width: 32px;
     height: 32px;
-    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -260,9 +259,19 @@ section .title2::after{
     background-repeat: no-repeat;
 }
 
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
 
 .ar:before {
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
 }
 
 
@@ -322,7 +331,6 @@ section .title2::after{
 .home .max-width{
   width: 100%;
   display: flex;
-  direction: rtl;
 }
 .home .max-width .row{
   margin-right: 0;
@@ -362,7 +370,7 @@ section .title2::after{
 
 /* about section styling */
 .about .title::after{
-    content: "من اكون";
+    content: "who i am";
 }
 .about .about-content .left{
 
@@ -381,7 +389,6 @@ section .title2::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-    direction: rtl;
 }
 .about .about-content .right .text span{
     color: crimson;
@@ -402,8 +409,9 @@ section .title2::after{
     border: 1px solid #00000029;
     padding: 10px;
     transition: 0.5s;
-    margin: 75px 35px;
-    text-align: center;
+    margin-left: 170px;
+    margin-top: 70px;
+
 }
 
 #card-container .card1 h3{
@@ -443,21 +451,22 @@ section .title2::after{
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 10px;
+    padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
+    margin-right: 120px;
 }
 .services .max-width .serv-content .card2{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 10px;
+    padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
-    margin-right: 90px;
+    margin-left: 120px;
 }
 .services .card1 .box{
     transition: all 0.3s ease;
@@ -535,13 +544,13 @@ section .title2::after{
     margin: auto;
 }
 .skills .title::after{
-    content: "ماذا اعرف";
+    content: "what i know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -609,7 +618,7 @@ section .title2::after{
     height: 220px;
     text-align: center;
     box-shadow: 0 10px 15px rgb(0 0 0 / 38%);
-    margin-left: 50px;
+    margin-right: 50px;
     border: 1px #00000038 solid;
 }
 #card-container2 .card2 h2 {
@@ -630,6 +639,9 @@ section .title2::after{
     text-align: center;
     box-shadow: 0 10px 15px rgb(0 0 0 / 38%);
     border: 1px #00000038 solid;
+}
+#card-container2 .card2 h2{
+    
 }
 #card-container2 .card2 img{
     height: 75px;
@@ -655,7 +667,7 @@ section .title2::after{
     width: 85%;
     height: 500px;
     margin: 30px;
-    margin-right: 55px;
+    margin-left: 83px;
 }
 
 /* my work */
@@ -701,21 +713,20 @@ section .title2::after{
   }
   
   .card-header {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     color: #0d0d0d;
     margin-bottom: 1.5rem;
     border-bottom: 1px red solid;
-    padding-bottom: 5px;
   }
   
   .card-text {
-    font-size: 29px;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
     color: #3d3d3d;
   }
   
   .card-btn {
-
     display: block;
     width: 90%;
     font-size: 2rem;
@@ -727,9 +738,8 @@ section .title2::after{
     transition: 0.2s;
     cursor: pointer;
     margin-top: 15px;
-    margin-right: 25px;
+    margin-left: 21px;
     letter-spacing: 0.1rem;
-    padding-right: 35px;
   }
 
   .card-btn span {
@@ -759,7 +769,7 @@ section .title2::after{
  
 /* contact section styling */
 .contact .title::after{
-    content: "أبقي علي تواصل";
+    content: "get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -777,24 +787,21 @@ section .title2::after{
 }
 .contact .contact-content .row{
     display: flex;
-    height: 90px;
+    height: 65px;
     align-items: center;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
 .contact .contact-content .row i{
-    font-size: 35px;
+    font-size: 25px;
     color: crimson;
-    padding-left: 15pxs;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
-    font-size: 25px;
 }
 .contact .contact-content .info .sub-title{
     color: #333;
-    font-size: 20px;
 }
 .contact .right form .fields{
     display: flex;
@@ -1010,7 +1017,6 @@ footer span a:hover{
     .services .max-width .serv-content .card1{
         margin-right: 0px;
         width: 100%;
-        margin-bottom: 20px;
     }
     .services .max-width .serv-content .card2{
         background: #222;
@@ -1019,9 +1025,9 @@ footer span a:hover{
         padding: 50px 25px;
         cursor: pointer;
         transition: all 0.3s ease;
+        margin-left: 0px;
         width: 100%;
         margin-top: 50px;
-        margin: 0px;
     }
     .skills .skills-content .left .text{
         font-size: 19px;
@@ -1044,9 +1050,6 @@ footer span a:hover{
         transition: all 0.3s ease;
         height: 523px;
         margin: 30px 0px;
-    }
-    .Accredited-certification{
-        height: 550px;
     }
     .img5{
         width: 85%;
@@ -1083,7 +1086,16 @@ footer span a:hover{
 
 
 
-
+    #card-container .card1{
+        width: 250px;
+        height: 200px;
+        border: 1px solid #00000029;
+        padding: 10px;
+        transition: 0.5s;
+        margin-left: 35px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
     #card-container2 .card1 img{
         height: 65px;
         padding: 5px;
@@ -1098,7 +1110,7 @@ footer span a:hover{
     #card-container2 .card2 h2{
         color: #1200a9;
         font-size: 23px;
-        margin-top: 45px;
+        margin-top: 24px;
     }
     #card-container2 .card2 img{
         height: 65px;
