@@ -37,6 +37,7 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+    direction: rtl;
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -50,6 +51,8 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+
+
 section .title{
     color: #dc143c;
     position: relative;
@@ -114,9 +117,10 @@ section .title2::after{
     background-color: #212121;
 }
 
+
 /* navbar styling */
 .home-content{
-    margin-left: 510px;
+    margin-left: -40px;
 }
 .enar{
     border: 1px red solid;
@@ -174,21 +178,23 @@ section .title2::after{
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
+    text-align: left;
     position: relative;
-    width: 700px;
+    width: 100%;
     height: 50px;
     margin-top: 15px;
     background-color: crimson;
     font-size: 25px;
-    padding: 10px;
+    padding: 10px;.home-content
 }
+
 
 
 .lang-menu {
     width: 100px;
     text-align: right;
     font-weight: bold;
-    margin-top: -15px;
+    margin-top: 25px;
     position: relative;
 }
 .lang-menu .selected-lang {
@@ -196,8 +202,8 @@ section .title2::after{
     justify-content: space-between;
     line-height: 2;
     cursor: pointer;
-    background-color: #ffffff;
-    padding: 0px 10px;
+    background-color: white;
+    padding: 5px;
     border-radius: 5px;
 }
 .lang-menu .selected-lang:before {
@@ -217,11 +223,11 @@ section .title2::after{
     background-color: #fff;
     border: 1px solid #f8f8f8;
     position: absolute;
-    top: 32px;
-    right: -18px;
+    top: 30px;
+    right: 0px;
     width: 125px;
     border-radius: 5px;
-    box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 }
 
 
@@ -242,6 +248,7 @@ section .title2::after{
 .lang-menu ul li:hover {
     background-color: #f2f2f2;
 }
+
 .lang-menu ul li a:before {
     content: '';
     display: inline-block;
@@ -252,16 +259,16 @@ section .title2::after{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.en:before {
+
+
+.ar:before {
     background-image: url(https://www.countryflags.io/us/flat/32.png);
 }
-.ar:before {
-    background-image: url(https://www.countryflags.io/ae/flat/32.png);
-}
+
+
 .lang-menu:hover ul {
     display: block;
 }
-
 
 
 
@@ -304,7 +311,7 @@ section .title2::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner3.jpg") no-repeat center;
+    background: url("images/banner4.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -315,24 +322,22 @@ section .title2::after{
 .home .max-width{
   width: 100%;
   display: flex;
+  direction: rtl;
 }
 .home .max-width .row{
   margin-right: 0;
 }
 .home .home-content .text-1{
     font-size: 27px;
-    text-align: right;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
-    text-align: right;
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
-    text-align: right;
 }
 .home .home-content .text-3 span{
     color: crimson;
@@ -360,7 +365,7 @@ section .title2::after{
     content: "من اكون";
 }
 .about .about-content .left{
-    width: 45%;
+
 }
 .about .about-content .left img{
     height: 400px;
@@ -370,14 +375,13 @@ section .title2::after{
 }
 .about .about-content .right{
     width: 55%;
-    margin-top: -350px;
-    text-align: right;
-    margin-left: 578px;
+    margin-top: 50px;
 }
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    direction: rtl;
 }
 .about .about-content .right .text span{
     color: crimson;
@@ -385,6 +389,7 @@ section .title2::after{
 .about .about-content .right p{
     text-align: justify;
 }
+
 
 #card-container .card1:hover{
     transform: scale(1.1);
@@ -397,9 +402,8 @@ section .title2::after{
     border: 1px solid #00000029;
     padding: 10px;
     transition: 0.5s;
-    margin-left: 170px;
-    margin-top: 70px;
-
+    margin: 75px 35px;
+    text-align: center;
 }
 
 #card-container .card1 h3{
@@ -415,6 +419,11 @@ section .title2::after{
     color:#fff;
     background: #111;
 }
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .services .title::before,
 .teams .title::before{
     background: #fff;
@@ -424,16 +433,31 @@ section .title2::after{
     background: #111;
     content: "ما اقدمه";
 }
-.services .card1{
+.services .max-width .card-service{
+    color: red;
+}
+    
+
+.services .max-width .serv-content .card1{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 50px 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
-        margin-left: 125px;
+}
+.services .max-width .serv-content .card2{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-right: 90px;
 }
 .services .card1 .box{
     transition: all 0.3s ease;
@@ -488,17 +512,7 @@ section .title2::after{
     opacity: 1;   
 }
 
-.services .card2{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-block;
-    margin-left: 140px;
-}
+
 .services .card2 .box{
     transition: all 0.3s ease;
 }
@@ -521,13 +535,13 @@ section .title2::after{
     margin: auto;
 }
 .skills .title::after{
-    content: "ما اعرفه";
+    content: "ماذا اعرف";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -595,10 +609,14 @@ section .title2::after{
     height: 220px;
     text-align: center;
     box-shadow: 0 10px 15px rgb(0 0 0 / 38%);
-    margin-right: 50px;
+    margin-left: 50px;
     border: 1px #00000038 solid;
 }
-
+#card-container2 .card2 h2 {
+    color: #1200a9;
+    font-size: 25px;
+    margin-top: 45px;
+}
 #card-container2 .card1 img{
     height: 80px;
     padding: 5px;
@@ -613,13 +631,13 @@ section .title2::after{
     box-shadow: 0 10px 15px rgb(0 0 0 / 38%);
     border: 1px #00000038 solid;
 }
-
 #card-container2 .card2 img{
     height: 75px;
     padding: 5px;
     margin-top: 5px;
     margin-right: 6px;
 }
+
 /* Accredited certification */
 .Accredited-certification{
     background-color: #0b052b;
@@ -637,20 +655,12 @@ section .title2::after{
     width: 85%;
     height: 500px;
     margin: 30px;
-    margin-left: 83px;
+    margin-right: 55px;
 }
 
 /* my work */
 .my-work{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 115vh;
-    padding: 0px;
+    border-bottom: 1px #00000063 solid;
 }
 .title-text{
     color: #dc143c;
@@ -658,29 +668,22 @@ section .title2::after{
     text-align: center;
     margin-top: 30px;
 }
-.grid {
+.my-work-container{
     display: flex;
-    width: 95em;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    align-items: start;
-  }
-  
+}
   .grid-item {
-        background-color: #fff;
-        border-radius: 0.4rem;
-        overflow: hidden;
-        box-shadow: 0 3rem 6rem rgb(0 0 0 / 22%);
-        cursor: pointer;
-        transition: 0.2s;
-        width: 520px;
-        margin-right: 40px;
-        height: 523px;
-        margin-left: 60px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    box-shadow: 0 3rem 6rem rgb(0 0 0 / 22%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 523px;
+    margin: 30px 0px;
+    margin-right: 30px;
   }
-  
+
+
   .grid-item:hover {
     transform: translateY(-0.5%);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
@@ -698,21 +701,21 @@ section .title2::after{
   }
   
   .card-header {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: 500;
     color: #0d0d0d;
     margin-bottom: 1.5rem;
     border-bottom: 1px red solid;
+    padding-bottom: 5px;
   }
   
   .card-text {
-    font-size: 23px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 29px;
     color: #3d3d3d;
   }
   
   .card-btn {
+
     display: block;
     width: 90%;
     font-size: 2rem;
@@ -724,8 +727,9 @@ section .title2::after{
     transition: 0.2s;
     cursor: pointer;
     margin-top: 15px;
-    margin-left: 21px;
+    margin-right: 25px;
     letter-spacing: 0.1rem;
+    padding-right: 35px;
   }
 
   .card-btn span {
@@ -745,7 +749,7 @@ section .title2::after{
   
   @media only screen and (max-width: 60em) {
     body {
-      padding: 3rem;
+      
     }
   
     .grid {
@@ -754,20 +758,11 @@ section .title2::after{
   }
  
 /* contact section styling */
-.contact{
-    background-color: #222222;
-    height: 420px;
-}
-.contact .title2::after{
-    content: "ابقى على تواصل";
+.contact .title::after{
+    content: "أبقي علي تواصل";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
-    margin-top: -5px;
-    border-left: 3px solid #dc143c;
-    margin-left: 800px;
-    text-align: right;
-    padding-left: 40px;
 }
 .contact .contact-content .text{
     font-size: 20px;
@@ -779,48 +774,27 @@ section .title2::after{
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
-    height: 200px;
-    display: grid;
-    text-align: right;
-    align-content: space-around;
-    align-items: end;
-    justify-items: end;
 }
 .contact .contact-content .row{
-    height: 65px;
+    display: flex;
+    height: 90px;
     align-items: center;
-    display: inline-flex;
-    margin-bottom: 20px;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
 .contact .contact-content .row i{
-    font-size: 25px;
+    font-size: 35px;
     color: crimson;
-    margin-left: 20px;
+    padding-left: 15pxs;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
-    color: white;
     font-size: 25px;
 }
 .contact .contact-content .info .sub-title{
-    color: #fff;
-    font-size: 18px;
-}
-
-.social-text h1{
-    color: white;
-    padding-bottom: 84px;
-    display: inline-block;
-}
-
-
-.right{
-    width: 500px;
-    margin-left: 380px;
-    margin-top: -250px;
+    color: #333;
+    font-size: 20px;
 }
 .contact .right form .fields{
     display: flex;
@@ -846,10 +820,9 @@ section .title2::after{
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
-    text-align: right;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
@@ -862,7 +835,6 @@ section .title2::after{
 .contact .right form .button-area{
   display: flex;
   align-items: center;
-  margin-left: 340px;
 }
 .right form .button-area button{
   color: #fff;
@@ -884,110 +856,6 @@ section .title2::after{
   background: none;
 }
 
-.or{
-    display: flex;
-    margin-left: -130px;
-    margin-top: -200px;
-    color: #dc143c;
-    font-size: 65px;
-}
-
-
-.ul1{
-    display: flex;
-    width: 779px;
-    margin-left: -340px;
-    margin-top: -75px;
-  }
-  .ul1 li{
-    position: relative;
-    display: block;
-    color: #666;
-    font-size: 30px;
-    height: 60px;
-    width: 60px;
-    background: #171515;
-    line-height: 60px;
-    border-radius: 50%;
-    margin: 0 15px;
-    cursor: pointer;
-    transition: .5s;
-  }
-  .ul1 li:before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: inherit;
-    width: inherit;
-    /* background: #d35400; */
-    border-radius: 50%;
-    transform: scale(.9);
-    z-index: -1;
-    transition: .5s;
-  }
-  .ul1 li:nth-child(1):before{
-    background: #4267B2;
-  }
-  .ul1 li:nth-child(2):before{
-    background: #63ff00;
-  }
-  .ul1 li:nth-child(3):before{
-    background: #E1306C;
-  }
-  .ul1 li:nth-child(4):before{
-    background: #2867B2;
-  }
-  .ul1 li:nth-child(5):before{
-    background: #ff0000;
-  }
-  .ul1 li:hover:before{
-    filter: blur(3px);
-    transform: scale(1.2);
-    /* box-shadow: 0 0 15px #d35400; */
-  }
-  .ul1 li:nth-child(1):hover:before{
-    box-shadow: 0 0 15px #4267B2;
-  }
-  .ul1 li:nth-child(2):hover:before{
-    box-shadow: 0 0 15px #1DA1F2;
-  }
-  .ul1 li:nth-child(3):hover:before{
-    box-shadow: 0 0 15px #E1306C;
-  }
-  u.ul1l li:nth-child(4):hover:before{
-    box-shadow: 0 0 15px #2867B2;
-  }
-  .ul1 li:nth-child(5):hover:before{
-    box-shadow: 0 0 15px #ff0000;
-  }
-  .ul1 li:nth-child(1):hover{
-    color: #456cba;
-    box-shadow: 0 0 15px #4267B2;
-    text-shadow: 0 0 15px #4267B2;
-  }
-  .ul1 li:nth-child(2):hover{
-    color: #26a4f2;
-    box-shadow: 0 0 15px #1DA1F2;
-    text-shadow: 0 0 15px #1DA1F2;
-  }
-  .ul1 li:nth-child(3):hover{
-    color: #e23670;
-    box-shadow: 0 0 15px #E1306C;
-    text-shadow: 0 0 15px #E1306C;
-  }
-  .ul1 li:nth-child(4):hover{
-    color: #2a6cbb;
-    box-shadow: 0 0 15px #2867B2;
-    text-shadow: 0 0 15px #2867B2;
-  }
-  .ul1 li:nth-child(5):hover{
-    color: #ff1a1a;
-    box-shadow: 0 0 15px #ff0000;
-    text-shadow: 0 0 15px #ff0000;
-  }
-
-
 
 /* footer section styling */
 footer{
@@ -1005,11 +873,12 @@ footer span a:hover{
 }
 
 
-
-
-
 /* responsive media query start */
+
 @media (max-width: 1104px) {
+    .home-content{
+        margin-top: 50px;
+    }
     .about .about-content .left img{
         height: 350px;
         width: 350px;
@@ -1087,8 +956,13 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+
     .max-width{
         padding: 0 23px;
+    }
+    .home-content{
+        margin-left: 0px;
+        margin-top: 40px;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -1105,15 +979,132 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    .navbar .menu li a{
+        font-size: 20px;
+    }
+    .home-content{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .home .home-content .text-1{
+        font-size: 25px;
+    }
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 40px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 20px;
     }
-    .about .about-content .right .text,
+    .about .about-content .left{
+        display: none;
+    }
+    .about .about-content .right{
+        margin-top: 0px;
+    }
+    .about .about-content .right .text{
+        font-size: 13px;
+    }
+    .services .serv-content{
+        display: block;
+    }
+    .services .max-width .serv-content .card1{
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .services .max-width .serv-content .card2{
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 50px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+        margin-top: 50px;
+        margin: 0px;
+    }
     .skills .skills-content .left .text{
         font-size: 19px;
+    }
+    .my-work {
+        border-bottom: 1px #00000045 solid;
+        padding-bottom: 50px;
+    }
+.my-work .max-width .my-work-container{
+        display: block;
+    }
+        .my-work .max-width .my-work-container .grid-item .card .card-content .card-btn{
+        margin-top: 110px;
+    }
+    .grid-item {
+        background-color: #fff;
+        border-radius: 0.4rem;
+        box-shadow: 0 3rem 6rem rgb(0 0 0 / 22%);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        height: 523px;
+        margin: 30px 0px;
+    }
+    .Accredited-certification{
+        height: 550px;
+    }
+    .img5{
+        width: 85%;
+        height: 300px;
+        margin: 30px;
+
+    }
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    .my-work .max-width .title-text{
+        color: #dc143c;
+   
+        text-align: center;
+        margin-top: -79px;
+    }
+  
+
+
+
+
+    #card-container2 .card1 img{
+        height: 65px;
+        padding: 5px;
+        margin-top: 5px;
+        margin-right: 7px;
+    }
+    #card-container2 .card1 h2{
+        color: #1200a9;
+        font-size: 23px;
+        margin-top: 45px;
+    }
+    #card-container2 .card2 h2{
+        color: #1200a9;
+        font-size: 23px;
+        margin-top: 45px;
+    }
+    #card-container2 .card2 img{
+        height: 65px;
+        padding: 5px;
+        margin-top: 5px;
+        margin-right: 6px;
     }
     .contact .right form .fields{
         flex-direction: column;
@@ -1133,4 +1124,6 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-}
+ 
+
+
