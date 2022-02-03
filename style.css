@@ -201,9 +201,11 @@ section .title2::after{
     justify-content: space-between;
     line-height: 2;
     cursor: pointer;
-    background-color: white;
+    color: white;
+    background-color: #0b052b;
     padding: 5px;
     border-radius: 5px;
+    padding-right: 20px;
 }
 .lang-menu .selected-lang:before {
     content: '';
