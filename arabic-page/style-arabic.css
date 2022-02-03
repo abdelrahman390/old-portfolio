@@ -43,8 +43,7 @@ section{
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
-.contact .contact-content{
+.skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -134,6 +133,9 @@ section .title2::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
+.navbar img{
+    height: 100px;
+}
 .navbar.sticky{
     padding: 15px 0;
     background: crimson;
@@ -143,11 +145,7 @@ section .title2::after{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
+
 .navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
@@ -196,11 +194,11 @@ section .title2::after{
 }
 .lang-menu .selected-lang {
     display: flex;
-    justify-content: space-between;
     line-height: 2;
     cursor: pointer;
-    background-color: #ffffff;
-    padding: 0px 5px;
+    color: white;
+    background-color: #0b052b;
+    padding: 5px;
     border-radius: 5px;
 }
 .lang-menu .selected-lang:before {
@@ -589,6 +587,51 @@ section .title2::after{
 .skills-content .right .js::before{
     width: 30%;
 }
+
+
+#card-container2{
+    display: flex;
+    justify-content: center;
+}
+#card-container2 .card1{
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 38%);
+    margin-right: 50px;
+    border: 1px #00000038 solid;
+}
+#card-container2 .card2 h2 {
+    color: #1200a9;
+    font-size: 25px;
+    margin-top: 45px;
+}
+#card-container2 .card1 img{
+    height: 80px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 6px;
+}
+
+#card-container2 .card2{
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 38%);
+    border: 1px #00000038 solid;
+}
+#card-container2 .card2 h2{
+    
+}
+#card-container2 .card2 img{
+    height: 75px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 6px;
+}
+
+
+
 /* Accredited certification */
 .Accredited-certification{
     background-color: #0b052b;
@@ -627,6 +670,14 @@ section .title2::after{
     text-align: center;
     margin-top: 30px;
 }
+
+.my-work-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 50px;
+}
+
+
 .grid {
     display: flex;
     width: 95em;
@@ -722,6 +773,10 @@ section .title2::after{
   }
  
 /* contact section styling */
+
+
+
+
 .contact{
     background-color: #222222;
     height: 420px;
@@ -729,18 +784,24 @@ section .title2::after{
 .contact .title2::after{
     content: "ابقى على تواصل";
 }
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -40px;
+}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
-    margin-top: -5px;
-    border-left: 3px solid #dc143c;
-    margin-left: 800px;
-    text-align: right;
-    padding-left: 40px;
+
 }
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: right;
+    color: white;
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -756,9 +817,10 @@ section .title2::after{
 }
 .contact .contact-content .row{
     height: 65px;
-    align-items: center;
-    display: inline-flex;
+    display: flex;
     margin-bottom: 20px;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
@@ -785,11 +847,6 @@ section .title2::after{
 }
 
 
-.right{
-    width: 500px;
-    margin-left: 380px;
-    margin-top: -250px;
-}
 .contact .right form .fields{
     display: flex;
 }
