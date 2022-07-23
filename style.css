@@ -51,7 +51,6 @@ section{
     justify-content: space-between;
 }
 
-
 section .title{
     color: #dc143c;
     position: relative;
@@ -115,7 +114,7 @@ section .title2::after{
     transform: translateX(-50%);
     background-color: #212121;
 }
-
+/* all similar content styling codes (End)*/
 
 /* navbar styling */
 .home-content{
@@ -140,6 +139,7 @@ section .title2::after{
 .navbar.sticky{
     padding: 15px 0;
     background: crimson;
+    padding: 5px;
 }
 .navbar .max-width{
     display: flex;
@@ -148,13 +148,21 @@ section .title2::after{
 }
 .navbar .logo img{
     height: 70px;
+    transition: 0.5s;
 }
+
 .navbar .logo img span{
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
     color: #fff;
 }
+
+.sticky .logo img{
+    height: 55px;
+    transition: 0.5s;
+}
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -193,21 +201,19 @@ section .title2::after{
     width: 100px;
     text-align: right;
     font-weight: bold;
-    margin-top: 25px;
     position: relative;
 }
 .lang-menu .selected-lang {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     line-height: 2;
     cursor: pointer;
     color: white;
     background-color: #0b052b;
     padding: 5px;
     border-radius: 5px;
-    padding-right: 20px;
 }
-.lang-menu .selected-lang:before {
+/* .lang-menu .selected-lang:before {
     content: '';
     display: inline-block;
     width: 32px;
@@ -215,7 +221,7 @@ section .title2::after{
     background-image: url(https://www.countryflags.io/us/flat/32.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
+} */
 
 .lang-menu ul {
     margin: 0;
@@ -557,7 +563,7 @@ section .title2::after{
 .skills .skills-content .left .text{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 .skills .skills-content .left p{
     text-align: justify;
@@ -612,12 +618,11 @@ section .title2::after{
     width: 90%;
 }
 .skills-content .right .js::before{
-    width: 30%;
+    width: 70%;
 }
 
 #card-container2{
     display: flex;
-    justify-content: center;
 }
 #card-container2 .card1{
     width: 200px;
@@ -687,12 +692,17 @@ section .title2::after{
     color: #dc143c;
     font-size: 50px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: -75px;
+
+    margin-bottom: 50px;
+}
+.my-work .title::after{
+    content: "enjoy your eyes";
 }
 .my-work-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0px 50px;
+    gap: 50px 50px;
 }
   .grid-item {
     background-color: #fff;
@@ -701,9 +711,7 @@ section .title2::after{
     cursor: pointer;
     transition: all 0.3s ease;
     height: 523px;
-    margin: 30px 0px;
   }
-
 
   .grid-item:hover {
     transform: translateY(-0.5%);
@@ -731,14 +739,15 @@ section .title2::after{
   }
   
   .card-text {
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 0.1rem;
     color: #3d3d3d;
     font-family: 'Poppins';
   }
   
   .card-btn {
-    display: block;
+    display: flex;
+    position: relative;
     width: 90%;
     font-size: 2rem;
     text-align: center;
@@ -748,9 +757,11 @@ section .title2::after{
     border-radius: 0.4rem;
     transition: 0.2s;
     cursor: pointer;
-    margin-top: 15px;
-    margin-left: 21px;
     letter-spacing: 0.1rem;
+    align-items: center;
+    justify-content: center;
+    bottom: -77px;
+    margin: auto;
   }
 
   .card-btn span {
@@ -978,7 +989,7 @@ footer span a:hover{
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 80px;
     }
     .services .serv-content{
         justify-content: space-between;
@@ -992,11 +1003,18 @@ footer span a:hover{
         width: 45%;
     }
 
+    .Accredited-certification {
+        height: 550px;
+    }
+    .Accredited-certification .text5{
+        margin-top: -15%;
+    }
+
+    .card-btn {
+        bottom: -100px;
+    }
 
 
-
-
-}
 
 @media (max-width: 690px) {
 
@@ -1048,6 +1066,15 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+
+    section .title{
+         font-size: 30px;
+    }
+
+    section .title::after{
+        font-size: 15px;
+    }
+
     .navbar .menu li a{
         font-size: 20px;
     }
@@ -1059,7 +1086,7 @@ footer span a:hover{
         font-size: 25px;
     }
     .home .home-content .text-2{
-        font-size: 40px;
+        font-size: 35px;
     }
     .home .home-content .text-3{
         font-size: 20px;
@@ -1103,7 +1130,7 @@ footer span a:hover{
         justify-content: space-between;
     }
         .my-work .max-width .my-work-container .grid-item .card .card-content .card-btn{
-        margin-top: 110px;
+        /* margin-top: 110px; */
     }
     .grid-item {
         background-color: #fff;
@@ -1119,37 +1146,14 @@ footer span a:hover{
         width: 85%;
         height: 300px;
         margin: 30px;
-
     }
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
 
     .my-work .max-width .title-text{
         color: #dc143c;
-   
         text-align: center;
         margin-top: -79px;
+        margin-bottom: 50px;
     }
-  
-
-
-
 
     #card-container2 .card1 img{
         height: 65px;
@@ -1191,6 +1195,4 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
- 
-
-
+}
