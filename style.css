@@ -738,9 +738,10 @@ section .title2::after{
   }
   
   .card-header {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     color: #0d0d0d;
+    padding-bottom: 5px;
     margin-bottom: 1.5rem;
     border-bottom: 1px red solid;
     font-family: 'Poppins';
