@@ -701,7 +701,7 @@ section .title2::after{
 }
 .my-work-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px 50px;
 }
   .grid-item {
@@ -710,12 +710,16 @@ section .title2::after{
     box-shadow: 0 3rem 6rem rgb(0 0 0 / 22%);
     cursor: pointer;
     transition: all 0.3s ease;
-    height: 523px;
+    height: 530px;
   }
 
   .grid-item:hover {
     transform: translateY(-0.5%);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+
+  .grid-item .card{
+    height: 100%;
   }
   
   .card-img {
@@ -727,6 +731,10 @@ section .title2::after{
   .card-content {
     text-align: center;
     padding-top: 15px;
+    height: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .card-header {
@@ -747,7 +755,6 @@ section .title2::after{
   
   .card-btn {
     display: flex;
-    position: relative;
     width: 90%;
     font-size: 2rem;
     text-align: center;
@@ -762,6 +769,8 @@ section .title2::after{
     justify-content: center;
     bottom: -77px;
     margin: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
   }
 
   .card-btn span {
@@ -1004,7 +1013,7 @@ footer span a:hover{
     }
 
     .Accredited-certification {
-        height: 550px;
+        height: auto;
     }
     .Accredited-certification .text5{
         margin-top: -15%;
@@ -1014,7 +1023,10 @@ footer span a:hover{
         bottom: -100px;
     }
 
-
+   .my-work-container{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0;
+   }
 
 @media (max-width: 690px) {
 
@@ -1059,7 +1071,11 @@ footer span a:hover{
         width: 45%;
     }
 
+     .my-work-container{
+        grid-template-columns: repeat(1, 1fr);
+    } 
 
+    }
 
 
 
@@ -1129,9 +1145,14 @@ footer span a:hover{
         display: block;
         justify-content: space-between;
     }
-        .my-work .max-width .my-work-container .grid-item .card .card-content .card-btn{
+    .my-work .max-width .my-work-container .grid-item .card .card-content .card-btn{
         /* margin-top: 110px; */
     }
+
+    .my-work-container{
+        padding: 0;
+    }
+
     .grid-item {
         background-color: #fff;
         border-radius: 0.4rem;
@@ -1139,8 +1160,9 @@ footer span a:hover{
         cursor: pointer;
         transition: all 0.3s ease;
         height: 523px;
-        margin: 30px 0px;
-        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+        width: 90%;
     }
     .img5{
         width: 85%;
