@@ -723,7 +723,7 @@ section .title2::after{
 
   .grid-item:hover {
     transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.5);
   }
 
   .grid-item .card{
