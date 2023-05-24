@@ -714,10 +714,11 @@ section .title2::after{
   .grid-item {
     background-color: #fff;
     border-radius: 0.4rem;
-    box-shadow: 0 3rem 6rem rgb(0 0 0 / 22%);
+    box-shadow: 0 0rem 1rem rgb(0 0 0 / 15%);
     cursor: pointer;
     transition: all 0.3s ease;
     height: 530px;
+    border: 1px solid #0000003b;
   }
 
   .grid-item:hover {
