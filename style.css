@@ -750,7 +750,7 @@ section .title2::after{
     color: #0d0d0d;
     padding-bottom: 5px;
     margin-bottom: 1.5rem;
-    border-bottom: 1px red solid;
+    border-bottom: 1px #dc143c solid;
     font-family: 'Poppins';
   }
   
