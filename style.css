@@ -455,7 +455,7 @@ section .title2::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "ما اقدمه";
+    content: "What I offer";
 }
 .services .max-width .card-service{
     color: red;
